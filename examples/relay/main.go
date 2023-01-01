@@ -83,6 +83,7 @@ func run() {
 		ID:    relay1.ID(),
 		Addrs: relay1.Addrs(),
 	}
+	log.Printf("Address %v", relay1info)
 
 	// Connect both unreachable1 and unreachable2 to relay1
 	if err := unreachable1.Connect(context.Background(), relay1info); err != nil {

@@ -1,0 +1,11 @@
+Find out why Auto Relay still seems to need a manual reservation to begin advertising the circuit 
+listen addr.
+
+Run a node on AWS that attempts to connect to the local node via the circuit relay.
+This should be possible after the manual reservation, but is it possible automatically (without reservation)
+
+Auto relay test file:
+https://github.com/libp2p/go-libp2p/blob/1ad0a50be62b1e00388b9d85fc997d66e8910c9d/p2p/host/autorelay/autorelay_test.go
+
+AutoNAT test file:
+https://github.com/libp2p/go-libp2p/blob/1ad0a50be62b1e00388b9d85fc997d66e8910c9d/p2p/host/autonat/test/autonat_test.go
