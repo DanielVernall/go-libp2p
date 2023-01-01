@@ -16,6 +16,7 @@ func main() {
 		log.Printf("Error creating host: %v", err)
 	}
 
+	log.Printf("ID: %v", h.ID())
 	log.Printf("Listening on: %v", h.Network().ListenAddresses())
 	log.Printf("Handling protocols: %v", h.Mux().Protocols())
 }

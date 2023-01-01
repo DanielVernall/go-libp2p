@@ -44,7 +44,7 @@ func createHostUnderTest() (host.Host, error) {
 
 func determineNATStatus(h host.Host) error {
 	// Connect to the AutoNat service
-	peerinfo, err := peer.AddrInfoFromString("/ip4/35.178.193.98/tcp/4001/p2p/12D3KooWGHcjc3ct1ZpKuVT4CjeuCHqFEz2tJyD9qRuCQRUev4yw")
+	peerinfo, err := peer.AddrInfoFromString("/ip4/35.178.193.98/tcp/35857/p2p/12D3KooWGHcjc3ct1ZpKuVT4CjeuCHqFEz2tJyD9qRuCQRUev4yw")
 	if err != nil {
 		return err
 	}
